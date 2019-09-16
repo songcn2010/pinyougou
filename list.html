@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/normallize.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/list.css">
+	<link rel="stylesheet" href="fonts/iconfont.css">
+</head>
+<body>
+	<!-- 公共的头部和底部，把代码提取过来
+	在css文件把对应的css内容提到common里面
+	有区别的在本文件对应的css里面进行修改 
+	-->
+
+	<!-- 这里用头部举例 -->
+	<!-- 例如下拉菜单需要覆盖其他内容，所以价格优先级z-index -->
+	<header>
+		<div class="short-nav">
+			<div class="container clearfix">
+				<div class="fl sn-l">
+					品优购欢迎您！
+					<a href="#" class="ml-5 mr-5">请登录</a>
+					<a href="#" class="m-color">免费注册</a>
+				</div>
+				<div class="fr sn-r">
+					<ul>
+						<li><a href="#">我的订单</a>
+						</li>
+						<li class="line"></li>
+						<li><a href="#">我的品优购
+							<span class="iconfont icon-bottom"></span>
+							</a>
+						</li>
+						<li class="line"></li>
+						<li><a href="#">品优购会员</a>
+						</li>
+						<li class="line"></li>
+						<li><a href="#">企业采购</a>
+						</li>
+						<li class="line"></li>
+						<li><a href="#">关注品优购
+							<span class="iconfont icon-bottom"></span>
+							</a>
+						</li>
+						<li class="line"></li>
+						<li><a href="#">客户服务
+							<span class="iconfont icon-bottom"></span>
+							</a>
+						</li>
+						<li class="line"></li>
+						<li><a href="#">网站导航
+							<span class="iconfont icon-bottom"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="logo container">
+			<div class="logo-wrapper">
+				<h1>品优购</h1>
+				<!-- 给搜索引擎识别用于增加logo中内容的权重，隐藏 -->
+				<div class="miaosha"></div>
+			</div>
+			<div class="search-wrapper clearfix">
+				<input type="text" placeholder="输入关键字">
+				<button></button>
+			</div>
+			<div class="cart-wrapper clearfix">
+				<span class="iconfont icon-qicheqianlian-1-copy m-color"></span>
+				<a href="#">我的购物车
+					<span class="iconfont icon-arrow-right"></span></a>
+					<div class="cart-info">
+					<div class="cover"></div>
+					<p>你的购物车空空如也！</p>
+					<p>你的购物车空空如也！</p>
+					<p>你的购物车空空如也！</p>
+					<p>你的购物车空空如也！</p>
+					<p>你的购物车空空如也！</p>
+					<p>你的购物车空空如也！</p>
+				<!-- 这个盒子对hover效果后的购物车下边框起遮挡作用 -->
+					</div>
+				<div class="count">0</div>
+				
+			</div>
+			<div class="search-hot">
+				<ul>
+					<li><a href="#">优惠购首发</a></li>
+					<li><a href="#">亿元优惠</a></li>
+					<li><a href="#">9.9元团购</a></li>
+					<li><a href="#">每满99减30</a></li>
+					<li><a href="#">办公用品</a></li>
+					<li><a href="#">电脑</a></li>
+					<li><a href="#">通信1111111</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-list container clearfix">
+			<div class="hl-l fl">
+				<ul>
+					<li>品优秒杀</li>
+					<li>品优秒杀</li>
+					<li>品优秒杀</li>
+				</ul>
+			</div>
+			<div class="hl-r fl">
+				<ul>
+					<li><a href="#">女装</a></li>
+					<li><a href="#">女鞋</a></li>
+					<li><a href="#">男装</a></li>
+					<li><a href="#">男鞋</a></li>
+					<li><a href="#">母婴童装</a></li>
+					<li><a href="#">食品</a></li>
+					<li><a href="#">智能数码</a></li>
+					<li><a href="#">运动户外</a></li>
+					<li><a href="#">更多分类<span class="iconfont icon-bottom"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<!-- banner区域 -->
+	<div class="banner container">
+		<div class="banner-t m-color">
+			<span class="iconfont icon-gaogenxie"></span>
+			<strong>女鞋</strong>
+			<div class="rush">
+				<div class="r-x">
+					<i>正在抢购</i>
+				</div>
+			</div>
+		</div>
+		<div class="banner-p clearfix">
+			<ul>
+				<li class="mr-16">
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li class="mr-16">
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li class="mr-16">
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li class="mr-16">
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li class="mr-16">
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li class="mr-16">
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li class="mr-16">
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li class="mr-16">
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li class="mr-16">
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li class="mr-16">
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li class="mr-16">
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li class="mr-16">
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<div>
+							<a href="#">
+							<img src="upload/shouji.png" alt="">
+							<p>Apple苹果iPhone 6S Plus（A1699）32G 金色 移动联通电信4G手机</p>
+							</a>
+						</div>
+						<div>
+							<strong class="m-color">￥6088</strong>
+							<del>￥6988</del>
+						</div>
+						<div class="plan">
+							<i>已售87%</i>
+							<div class="plan-c">
+								<div class="per"></div>
+							</div>
+							<i>剩余29件</i>
+						</div>
+						<button>立即抢购</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 分页模块 -->
+	<div class="page-wrapper">
+		<div class="page">&lt;&lt;上一页</div>
+		<div class="page">1</div>
+		<div class="page">2</div>
+		<div class="page">3</div>
+		<div class="page">下一页&gt;&gt;</a></div>
+		<span class="page-count">共10页</span>
+		<span>
+			到第
+			<input type="number"  min="1"  max="20" class="page" name="" id="">
+			页
+		</span>
+			<button class="page">确定</button>
+	</div>
+	
+	<footer>
+			<div class="container clearfix">
+			<div class="feature">
+				<ul>
+					<li class="fl">
+						<div class="icon fl"></div>
+						<strong>正品保证</strong>
+						<p>正品保障，提供发票</p>
+					</li>
+					<li class="fl">
+						<div class="icon fl"></div>
+						<strong>正品保证</strong>
+						<p>正品保障，提供发票</p>
+					</li>
+					<li class="fl">
+						<div class="icon fl"></div>
+						<strong>正品保证</strong>
+						<p>正品保障，提供发票</p>
+					</li>
+					<li class="fl">
+						<div class="icon fl"></div>
+						<strong>正品保证</strong>
+						<p>正品保障，提供发票</p>
+					</li>
+					<li class="fl">
+						<div class="icon fl"></div>
+						<strong>正品保证</strong>
+						<p>正品保障，提供发票</p>
+					</li>
+				</ul>
+			</div>
+			<div class="service clearfix">
+				<dl>
+					<dt><strong>购物指南</strong></dt>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+				</dl>
+				<dl>
+					<dt><strong>购物指南</strong></dt>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+				</dl>
+				<dl>
+					<dt><strong>购物指南</strong></dt>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+				</dl>
+				<dl>
+					<dt><strong>购物指南</strong></dt>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+				</dl>
+				<dl>
+					<dt><strong>购物指南</strong></dt>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+					<dd><a href="#">购物指南</a></dd>
+				</dl>
+				<div class="help">
+					<strong>帮助中心</strong>
+					<div class="erweima"></div>
+					<p>品优购客户端</p>
+				</div>
+			</div>
+			<div class="contact">
+				<div class="contact-t">
+					<a href="#" class="ct-line">联系我们</a>
+					<a href="#" class="ct-line">联系我们</a>
+					<a href="#" class="ct-line">联系我们</a>
+					<a href="#" class="ct-line">联系我们</a>
+					<a href="#" class="ct-line">联系我们</a>
+					<a href="#" class="ct-line">联系我们</a>
+					<a href="#" class="ct-line">联系我们</a>
+					<a href="#" class="ct-line">联系我们</a>
+					<a href="#" class="ct-line">联系我们</a>
+					<a href="#" class="ct-line">联系我们</a>
+					<a href="#">联系我们</a>
+				</div>
+				<div class="contact-b">
+					<p>地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编610000 电话：400-800-8820 传真：010-82935199 邮箱：zhanghj+itcast.cn</p>
+					<p>京ICP备08001421号京公网安备11018007702</p>
+				</div>
+			</div>
+			</div>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,417 @@
+a, b, body, dd, del, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var, input {
+    margin: 0;
+    padding: 0;
+}
+ ul,ol {
+    list-style: none;
+}
+img,button,input {
+    border: 0;
+}
+em, i, u {
+    font-style: normal;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+body {
+    font: 12px/1.5 'microsoft yahei',Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+}
+a {
+    color: #666;
+    text-decoration: none;
+    font-family: 'microsoft yahei';
+}
+a:hover {
+    color: #c81623;
+}
+/* 版心公共类 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.ml-5 {
+    margin-left: 5px;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.pl-5 {
+    padding-left: 5px;
+}
+.pr-5 {
+    padding-right: 5px;
+}
+.pt-5 {
+    padding-top: 5px;
+}
+.pd-5 {
+    padding-bottom: 5px;
+}
+.m-color {
+    color: #c81623;
+}
+img {
+    vertical-align: top;
+}
+.text-cut {
+    overflow: hidden;  
+    white-space: nowrap;  
+    text-overflow: ellipsis; 
+} /*文字溢出变省略号*/
+
+
+
+
+/*公共头部区域*/
+header {
+    border-bottom: 2px solid #b1191a;
+}
+.short-nav {
+    height: 32px;
+    line-height: 32px;
+    background-color: #f1f1f1;
+}
+.short-nav .container {
+    height: 32px;
+}
+.short-nav .sn-l {
+}
+.short-nav .sn-r {
+}
+.short-nav .sn-r  li {
+    float: left;
+}
+.short-nav ul li.line {
+    width: 1px;
+    height: 12px;
+    background-color: #666666;
+    margin: 10px 15px 0;
+}
+.short-nav .sn-r  li span {
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    font-size: 0.8em;
+}
+.logo {
+    padding: 25px 0 20px 0;
+    position: relative;
+}
+.logo-wrapper {
+    width: 171px;
+    height: 61px;
+    background: url(../images/logo.png) 0 0 no-repeat;
+}
+.logo-wrapper h1 {
+    font-size: 0; /*隐藏文字*/
+}
+.search-wrapper {
+    position: absolute;
+    left: 348px;
+    top: 25px;
+}
+.search-wrapper input {
+    width: 454px;
+    height: 32px;
+    border: 2px solid #b1191a;
+    float: left;
+    text-indent: 10px;
+    outline: none; /*(去掉选中输入栏后的蓝色边框）*/
+}
+.search-wrapper button {
+    width: 80px;
+    height: 36px;
+    float: left;
+    background: url(../images/search.png) #b1191a center no-repeat;
+    float: left;
+}
+.cart-wrapper {
+    width: 140px;
+    height: 34px;
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding-top: 2px;
+}
+.cart-wrapper > span {
+    font-size: 1.5em;
+    position: relative;
+    top: 2px;
+}
+.cart-wrapper a > span {
+    font-size: 10px;
+    position: relative;
+    top: -1px;
+}
+.cart-wrapper .count {
+    /*1. 不建议直接使用宽高，而是让内容撑开，再酌情用padding
+    2. 这种情况使用left定位更合适*/
+    border-radius: 10px 10px 10px 0;
+    background-color: #e60012;
+    position: absolute;
+    left: 100px;
+    bottom: 30px;
+    padding: 0 4px;
+    color: #fff;
+}
+.cart-info {
+    width: 310px;
+    border: 1px solid #dfdfdf;
+    position: absolute;
+    right: -1px;
+    top: 36px;
+    background-color: #f7f7f7;
+    line-height: 70px;
+    display: none;
+    z-index: 2;/*（hover之后下边的扩展栏层级性高）*/
+}
+.cover {
+    width: 140px;
+    height: 4px;
+    background-color: #f7f7f7;
+    position: absolute;
+    right: 0;
+    top: -2px;
+    display: none;
+}
+.cart-wrapper:hover .cart-info {
+    display: block;
+}
+.cart-wrapper:hover .cover {
+    display: block;
+}
+.search-hot {
+    height: 20px;
+    position: absolute;
+    top: 65px;
+    left: 348px;
+}
+.search-hot li {
+    float: left;
+    padding: 0 12px;
+}
+.main-nav {
+    position: relative;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+}
+.main-nav .mn-l {
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    color: #ecd3d3;
+}
+.main-nav .mn-r a {
+    margin-right: 40px;
+}
+.main-nav .count {
+    line-height: 20px;
+    background-color: #b1191a;
+    border-radius: 20px 20px 20px 0;
+    padding: 0 15px;
+    color: #fff;
+    position: absolute;
+    left: 735px;
+    top: -10px;
+    font-size: 14px;
+}
+/*产品的下拉菜单公共区域*/
+header .list {
+    display: none;
+}
+.mn-l:hover .list {
+    display: block;
+}
+.header-list {
+}
+.hl-l {
+    width: 360px;
+}
+.hl-l li {
+    float: left;
+    padding: 0 28px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 44px;
+}
+.hl-r li {
+    float: left;
+    padding: 0 15px 0 30px;
+    font-size: 14px;
+    line-height: 44px;
+}
+.hl-r li span {
+    font-size: 10px;
+}
+.logo-wrapper {
+    position: relative;
+}
+.list {
+    width: 209px;
+    height: 465px;
+    background-color: #c81623;
+    line-height: 31px;
+    font-size: 14px;
+    text-align: left;
+    text-indent: 10px;
+    position: absolute;
+    bottom: -467px;
+    left: 0;
+    border-left: 1px solid #c81623;
+    z-index: 99;
+}
+.list a {
+    color: #fff;
+    font-weight: 400;
+    display: block;
+}
+.list span {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+}
+.list li:hover {
+    background-color: #f7f7f7;
+}
+.list li a:hover {
+    color: #c81623;
+} 
+
+
+
+
+/*底部公共区域*/
+footer {
+    background-color: #f5f5f5;
+    margin-top: 37px;
+} 
+footer .feature {
+    height: 110px;
+}
+footer .feature li {
+    width: 20%;
+    text-indent: 90px;
+    position: relative;
+    margin-top: 30px;
+}
+footer .feature .icon {
+    height: 50px;
+    width: 50px;
+    background: url(../images/icons.png) -252px -2px no-repeat;
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    margin-top: -25px;
+}
+footer .service {
+    height: 188px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+footer .service dl {
+    float: left;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+footer .service dt {
+    line-height: 30px;  
+    font-size: 16px;
+    font-weight: 700;
+}
+footer .service dd {
+    line-height: 20px;
+    text-indent: 5px;
+}
+footer .service .help {
+    width: 100px;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+    padding: 29px 50px;
+}
+.help .erweima {
+    height: 95px;
+    background: url(../images/erweima.png) 0 0 no-repeat;
+}
+footer .contact {
+    height: 106px;
+}
+.contact-t {
+    margin-top: 14px;
+    text-align: center;
+}
+.contact-t a {
+    padding: 0 16px;
+    line-height: 24px;
+    position: relative;
+}
+.ct-line::after {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #666666;
+    position: absolute;
+    right: -3px;
+    top: 3px;
+}
+.contact-b {
+    text-align: center;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+
+/*公共分页模块*/
+.page-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+.page-wrapper .page {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 0  15px;
+    line-height: 25px;
+    cursor: pointer;
+}
+.page-count {
+    margin: 0 20px 0 10px;
+    border: none;
+}
+.page-wrapper input {
+    width: 30px;
+    border: 1px solid #ccc;
+}
+.page-wrapper  button {
+    background-color: #fff;
+    margin-left: 15px;
+}

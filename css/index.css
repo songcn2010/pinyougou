@@ -1,0 +1,280 @@
+
+
+/*banner区域*/
+.main-nav .list {
+	display: block;
+}
+.banner {
+	padding-top: 10px;
+} 
+.carousel {
+	width: 720px;
+	height: 455px;
+	margin-left: 220px;
+	position: relative;
+}
+.carousel .arrow {
+	width: 24px;
+	height: 36px;
+	top: 50%;
+	margin-top: -18px;
+}
+.carousel .arrow-l {
+	position: absolute;
+	background: url(../images/left.png) 0 0 no-repeat;
+}
+.carousel .arrow-r {
+	position: absolute;
+	right: 0;
+	background: url(../images/right.png) 0 0 no-repeat;
+}
+.carousel .arrow:hover {
+	background-color: #fff;
+}
+.carousel ul {
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	text-align: center;
+}
+.carousel ul li {
+	width: 10px;
+	height: 10px;
+	border: 1px solid #fff;
+	display: inline-block;
+	border-radius: 50%;
+}
+.carousel ul li:hover {
+	background-color: #fff;
+}
+.short-wrapper {
+	width: 250px;
+	height: 455px;
+	position: relative;
+}
+.short-news {
+}
+.short-news .sn-t {
+	border: 1px solid #e4e4e4;
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px dashed #e4e4e4;
+	padding: 0 10px;
+}
+.short-news .sn-t span {
+	font-size: 10px;
+}
+.short-news .sn-d {
+	border: 1px solid #e4e4e4;
+	padding: 0 15px;
+	border-top: none;
+	border-bottom: none;
+}
+.short-news .sn-d ul {
+	padding: 5px 0;
+}
+.short-news .sn-d li {
+	line-height: 25px;
+}
+.short-icons {
+	height: 205px;
+	/*border: 1px solid #e4e4e4;*/
+	border-top: none;
+}
+.short-icons table {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	white-space: nowrap;
+}
+.short-icons table td {
+	border: 1px solid #e4e4e4;
+}
+.short-icons table span {
+	font-size: 2em;
+	margin-left: 5px;
+}
+.short-ad {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/*今日推荐区域*/
+.recommend {
+	margin-top: 11px;
+}
+.recommend .r-l {
+	width: 210px;
+	height: 155px;
+	background-color: #5c5251;
+	text-align: center;
+	padding-top: 8px;
+	color: #fff;
+}
+.recommend .r-l span {
+	font-size: 65px;
+}
+.recommend .r-r {
+	width: 990px;
+}
+.recommend .r-r .r-item {
+	width: 25%;
+	height: 163px;
+	float: left;
+	position: relative;
+}
+.r-line:after {
+	content:"";
+	width: 1px;
+	height: 143px;
+	background-color: #ddd;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+
+/*猜你喜欢区域*/
+.guess {
+	height: 270px;
+	margin-top: 21px;
+}
+.guess-t {
+	line-height: 38px;
+	font-size: 14px;
+	padding: 0 10px;
+}
+.guess-t .fl {
+	font-size: 18px;
+	font-family: "microsoft yahei";
+}
+.guess-b {
+	border: 1px solid #e4e4e4;
+}
+.guess-b li {
+	float: left;
+	width: 16.6%;
+	height: 231px;
+}
+.guess li p {
+	padding: 0 35px;
+}
+.guess li .price {
+	color: red;
+	font-weight: 700;
+	font-size: 16px;
+}
+.guess li .price span {
+	font-size: 18px;
+}
+.guess-desc {
+	position: relative;
+}
+.guess-line:after {
+	content: "";
+	width: 1px;
+	height: 60px;
+	background-color: #ddd;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+/*趣味区域*/
+.interest {
+	height: 440px;
+	margin-top: 22px;
+}
+.interest h3 {
+	line-height: 34px;
+	font-size: 18px;
+	padding-left: 10px;
+}
+.interest-wrapper {
+	height: 405px;
+	border: 1px solid #ededed;
+}
+.interest-wrapper .iw-l {
+	background-color: lime;
+}
+.interest-wrapper .iw-c-a {
+	width: 226px;
+	height: 100%;
+}
+.iw-c-a-t {
+	width: 191px;
+	margin: 2.5px auto;
+	text-align: center;
+	border-bottom: 1px dashed #ededed;
+}
+.iw-c-a-ad {
+	border-bottom: 1px solid #ededed;
+}
+.interest-wrapper .iw-c-b {
+	width: 405px;
+	height: 100%;
+	border: 1px solid #ededed;
+	border-top: none;
+	border-bottom: none;
+	background-color: #f7f7f7;
+}
+.iw-c-b-t {
+	width: 365px;
+	margin: 2.5px auto;
+	text-align: center;
+	border-bottom: 1px dashed #ededed;
+}
+.iw-c-b-c {
+	border-bottom: 1px solid #ededed;
+}
+.iw-c-b-ad {
+	width: 202px;
+	height: 158px;
+}
+.iw-c-b .ad-l {
+	border-right: 1px solid #ededed;
+}
+.interest-wrapper .iw-r {
+	width: 157px;
+	height: 400px;
+	overflow: hidden;
+	margin: 5px 0 0 5px;
+	position: relative;
+}
+.iw-r li {
+	float: left;
+	width: 74px;
+	height: 57px;
+	border-bottom: 1px dashed #ededed;
+	border-left: 1px dashed #ededed;
+}
+.iw-r li img {
+	width: 78px;
+	height: 36px;
+	margin: 5px 0 0 5px;
+}
+
+
+/*侧边栏区域*/
+aside {
+	position: fixed;
+	right: 50%;
+	margin-right: 610px;
+	top: 50%;
+	margin-top: -170px;
+}
+aside li {
+	line-height: 32px;
+	border-bottom: 1px solid #ededed;
+	text-align: right;
+}
+aside li a {
+	display: block;
+}
+aside li a:hover {
+	background-color: #c81623;
+	color: #fff;
+}

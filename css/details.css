@@ -1,0 +1,187 @@
+/*面包屑区域*/
+.crumbs-nav {
+	padding-top: 20px;
+	padding-bottom: 10px;	
+}
+.crumbs-nav .iconfont {
+	font-size: 0.8em;
+	position: relative;
+	top: -1px;
+}
+
+
+/*产品详情区域*/
+.pro-main .pro-l {
+	width: 400px;
+}
+.pro-main .pro-big {
+	width: 400px;
+	height: 400px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	/*border-box定义的盒子，不会随着padding和boder的加入而增大盒子的占用空间*/
+	text-align: center;
+	line-height: 400px;
+}
+.pro-main .pro-big img {
+	vertical-align: middle;
+}
+.pro-small {
+	width: 400px;
+	height: 60px;
+	margin-top: 50px;
+	position: relative;
+}
+.pro-small .arrow {
+	width: 20px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+}
+.pro-small .arrow-l {
+	background: url(../images/arrow-l.png) center no-repeat;
+	left: 0;
+}
+.pro-small .arrow-r {
+	background: url(../images/arrow-r.png) center no-repeat;
+	right: 0;
+}
+.pro-small .ps-img {
+	margin: 0 30px;
+	height: 60px;
+	overflow: hidden;
+}
+.pro-small ul {
+	width: 680px;
+}
+.pro-small ul li {
+	float: left;
+	height: 58px;
+	width: 56px;
+	border: 1px solid #ccc;
+	margin: 0  5px;
+	text-align: center;
+	line-height: 58px;
+}
+.pro-small ul li:hover {
+	border: 1px solid #c81623;
+	cursor: pointer;
+}
+.pro-small ul li img {
+	vertical-align: middle;
+}
+.pro-l .pro-l-b {
+	margin-top: 25px;
+	line-height: 20px;
+}
+.pro-l .pro-l-b i {
+	font-size: 0.8em;
+}
+.pro-l .pro-l-b a {
+	margin-left: 35px;
+}
+.pro-l .pro-l-b input {
+	vertical-align: middle;
+	margin-top: -3px;
+	color: #fff;
+}
+.pro-l .pro-l-b .share:visited .icon-xinaixin{
+	color: red;
+}
+.pro-main .pro-r {
+	width: 720px;
+}
+.pro-main .pro-r h3 {
+	font-size: 16px;
+}
+.pro-main .pro-r p {
+	line-height: 30px;
+}
+.pro-r .price-desc {
+	background-color: #fee9eb;
+	padding-top: 5px;
+}
+.desc  {
+	width: 55px;
+	padding: 10px 5px  0;
+	position: relative;
+	top: 3px;
+}
+.pri-info .item-desc {
+	font-size: 16px;
+}
+.pri-info .item-desc span {
+	font-size: 24px;
+	font-weight: 700;
+}
+.price-desc .pri-info .item-desc a {
+	font-size: 14px;
+}
+.promotion-desc {
+	width: 550px;
+	padding-bottom: 25px;
+	margin-top: 7px;
+	line-height: 30px;
+}
+.promotion-desc span {
+	background-color: #c81623;
+	color: #fff;
+	padding: 3px 0;
+}
+.support-desc {
+	margin-top: 13px;
+}
+.adress-desc {
+	margin-top: 6px;
+}
+.adress-desc select {
+	border: none;
+	outline: none;
+}
+.pro-r .line {
+	height: 1px;
+	width: 550px;
+	background-color: #ccc;
+}
+.choice {
+	padding-bottom: 15px;
+}
+.choice-box {
+	display: inline-block;
+	padding: 3px 10px;
+	text-align: center;
+	border: 1px solid #ededed;
+	background-color: #f7f7f7;
+	line-height: 20px;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+.choice-box:hover {
+	border: 1px solid #c81623;
+}
+.choice-line {
+	height: 1px;
+	width: 330px;
+	background-color: #ccc;
+	position: relative;
+	left: 220px;
+	margin-bottom: 15px;
+}
+.sure input {
+	height: 50px;
+	width: 50px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+.sure button {
+	height: 52px;
+	width: 140px;
+	background-color: #c81623;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	top: 2px;
+}
